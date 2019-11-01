@@ -6,9 +6,6 @@ const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 client.commands = new Discord.Collection();
 
-app.listen(8000, function () {
-    console.log('Example app listening on port 3000!');
-  });
 
 // Preparando cliente para iniciar
 
