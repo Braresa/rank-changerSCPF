@@ -6,6 +6,8 @@ const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 client.commands = new Discord.Collection();
 
+var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+
 // Preparando cliente para iniciar
 
 const AllComands = fs.readdirSync("./commands").filter(file => file.endsWith('.js'));
