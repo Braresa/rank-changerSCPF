@@ -4,7 +4,13 @@ const config = require("./config.json");
 const rbx = require("noblox.js");
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
+const app = express();
 client.commands = new Discord.Collection();
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 
 
 // Preparando cliente para iniciar
